@@ -58,11 +58,17 @@
             text-decoration: none;
         }
         
+        
+        header #navbox > a:first-child{
+            color: #5e7ce0;
+        }
         header .nav-box:hover {
             color: #5e7ce0;
             transition: color .3s cubic-bezier(.645, .045, .355, 1);
         }
-        
+        header #navbox a:not(:first-child):active header #navbox > a:first-child{
+            color:#293040;
+        }
         header .right-box {
             line-height: 59px;
         }
@@ -173,26 +179,26 @@
             </div>
             <div id="navbox">
                 <a href="https://classroom.devcloud.huaweicloud.com/home">
-                    <div class="nav-box" id="shouye">首页
+                    <div class="nav-box" >首页
                     </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/teachingmarket">
-                    <div class="nav-box" id="shouye">教学市场 </div>
+                    <div class="nav-box" >教学市场 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudclassroom">
-                    <div class="nav-box" id="shouye">云课堂 </div>
+                    <div class="nav-box" >云课堂 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/microauthentication">
-                    <div class="nav-box" id="shouye">培训认证 </div>
+                    <div class="nav-box" >培训认证 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudlab">
-                    <div class="nav-box" id="shouye">云端实验室 </div>
+                    <div class="nav-box" >云端实验室 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/experimentalclass">
-                    <div class="nav-box" id="shouye">新工科实验班 </div>
+                    <div class="nav-box" >新工科实验班 </div>
                 </a>
                 <a href="https://bbs.huaweicloud.com/forum/forumdisplay-fid-708-orderby-lastpost.html">
-                    <div class="nav-box" id="shouye">学习交流 </div>
+                    <div class="nav-box" >学习交流 </div>
                 </a>
             </div>
             <div id="rightBox" class="right-box">
