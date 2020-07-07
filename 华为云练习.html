@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classroom平台首页</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-variant: taular-nums;
+            font-family: "PingFang SC", PingFangSC-Regular, "Helvetica Neue", "Microsoft YaHei Regular", "Microsoft YaHei", "宋体", sans-serif;
+            font-size: 12px;
+            color: #293040;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        header {
+            position: fixed;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            padding: 0 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        header .public-logo {
+            width: 120px;
+            height: 40px;
+            background-image: url("https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/logo.ee14f183979fd61abac2.svg");
+            background-size: 100% 100%;
+        }
+        
+        header #navbox {
+            margin-left: 40px;
+        }
+        
+        header .nav-box {
+            float: left;
+            font-size: 1vw;
+            line-height: 32px;
+            margin-right: 48px;
+            cursor: pointer;
+        }
+        
+        header #navbox a {
+            color: #293040;
+            text-decoration: none;
+        }
+        
+        header .nav-box:hover {
+            color: #5e7ce0;
+            transition: color .3s cubic-bezier(.645, .045, .355, 1);
+        }
+        
+        header .right-box {
+            line-height: 59px;
+        }
+        
+        header button {
+            border-radius: 16px;
+            margin-left: 12px;
+            padding: 4px 20px;
+            min-width: 80px;
+            font-size: 14px;
+        }
+        
+        header .right-box {
+            display: flex;
+            margin-left: 100px;
+            line-height: 59px;
+            height: 100%;
+        }
+        
+        header .btn-reset .devui-btn {
+            height: 32px;
+            color: #293040;
+            background: #fafafa;
+            border: 1px solid #e3e5e9;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .05);
+            white-space: nowrap;
+            margin-right: 30px;
+        }
+        
+        header .button-content {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        header .btn-reset .devui-btn:hover {
+            transition: color .3s cublic-bezier(.645, .045, .355, 1);
+            border: 1px solid #5e7ce0;
+        }
+        
+        #userInfoMenu {
+            line-height: 59px;
+        }
+        
+        #userInfoMenu span {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 24px;
+            cursor: pointer;
+            margin: 0 6px;
+            padding: 0;
+            line-height: 59px;
+        }
+        
+        #userInfoMenu span:hover {
+            color: #5e7ce0;
+            transition: color .3s cubic-bezier(.645, .045, .355, 1);
+        }
+        
+        .devui-avatar-background-0 {
+            background-color: #ff8f74;
+        }
+        
+        .header {
+            /* margin-top: 60px; */
+            height: calc(100vh - 60px);
+        }
+        
+        .header .banner-swipper {
+            min-height: 360px;
+        }
+        
+        .header img {
+            vertical-align: middle;
+            border-style: none;
+        }
+        
+        .nav #nav-box {}
+        
+        .nav #navbox {}
+        
+        .header {}
+        
+        .content {}
+        
+        .content .intro-box {}
+        
+        .content .class-box {}
+        
+        .content .market-box {}
+        
+        .content .activity-box {}
+        
+        .footer {}
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <!--页面导航区域-->
+        <!-- https://classroom.devcloud.huaweicloud.com/home -->
+        <header>
+            <div class="public-logo">
+                <a href="https://classroom.devcloud.huaweicloud.com/home"></a>
+                <div class="nav-box" id="logo">
+                </div>
+                </a>
+            </div>
+            <div id="navbox">
+                <a href="https://classroom.devcloud.huaweicloud.com/home">
+                    <div class="nav-box" id="shouye">首页
+                    </div>
+                </a>
+                <a href="https://classroom.devcloud.huaweicloud.com/home/course/teachingmarket">
+                    <div class="nav-box" id="shouye">教学市场 </div>
+                </a>
+                <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudclassroom">
+                    <div class="nav-box" id="shouye">云课堂 </div>
+                </a>
+                <a href="https://classroom.devcloud.huaweicloud.com/home/course/microauthentication">
+                    <div class="nav-box" id="shouye">培训认证 </div>
+                </a>
+                <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudlab">
+                    <div class="nav-box" id="shouye">云端实验室 </div>
+                </a>
+                <a href="https://classroom.devcloud.huaweicloud.com/home/experimentalclass">
+                    <div class="nav-box" id="shouye">新工科实验班 </div>
+                </a>
+                <a href="https://bbs.huaweicloud.com/forum/forumdisplay-fid-708-orderby-lastpost.html">
+                    <div class="nav-box" id="shouye">学习交流 </div>
+                </a>
+            </div>
+            <div id="rightBox" class="right-box">
+                <a id="btnReset" class="btn-reset" href="https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fdevcloudsso.huaweicloud.com%2Fauthticket%3Fservice%3Dhttps%253A%252F%252Fclassroom.devcloud.huaweicloud.com%252Fplatform#/login">
+                    <button class="devui-btn">
+                        <span class="button-content">
+                            教学平台
+                        </span>
+                    </button>
+                </a>
+            </div>
+            <div id="userInfoMenu">
+                <span>登录</span>
+                <span> | </span>
+                <span>注册</span>
+            </div>
+        </header>
+        <div class="header">
+            <!--页面头部轮播图区域-->
+            <div class="banner-swipper">
+                <a href="https://bbs.huaweicloud.com/forum/thread-39737-1-1.html">
+                    <img class="swiper-lazy" src="https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-2.d69113832d9d49869f17.jpg" width="100%">
+
+                </a>
+            </div>
+            <!--提示：不需要实现轮播图效果-->
+        </div>
+
+        <div class="content">
+            <!--页面内容区域-->
+            <div class="intro-box">
+                <!--classroom介绍区域-->
+            </div>
+            <div class="class-box">
+                <!--云课堂区域-->
+            </div>
+            <div class="market-box">
+                <!--教学市场区域-->
+            </div>
+            <div class="activity-box">
+                <!--活动公告区域-->
+            </div>
+        </div>
+
+        <div class="footer">
+            <!--页面尾部区域-->
+            <!--提示：页面尾部内容可以简化处理-->
+        </div>
+
+</body>
+
+</html>
