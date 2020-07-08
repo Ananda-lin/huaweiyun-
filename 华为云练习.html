@@ -21,6 +21,7 @@
         
         a {
             text-decoration: none;
+            cursor:pointer;
         }
         
         header {
@@ -182,7 +183,7 @@
             flex-wrap:nowrap;
             padding:30px;
             position:relative;
-            top:-25px;
+            top:-35px;
             z-index:2;
             width:1200px;
             background:#fff;
@@ -202,7 +203,7 @@
             height:32px;
             line-height:20px;
             white-space:nowrap;
-            border:none;
+            border:none !important;
             border-radius:16px;
             margin-right:12px;
             min-width:80px;
@@ -210,6 +211,17 @@
             font-size:14px;
             background-color:#5e7ce0;
             color:#fff;
+            -webkit-appearance: inhert;
+            cursor:pointer;
+            outline:0;
+        }
+        .content .dev-btn:hover{
+            background-color:#526ecc;
+
+        }
+        .content .dev-btn:active{
+            border:none;
+
         }
         .content .intro-box {}
         
@@ -296,7 +308,7 @@
            <section class="banner-box">
                <div class="banner-box-left"> Classroom是基于华为云的云上软件教学服务，支持高校师生实现备课、上课、作业、考试、实验、实训等全教学流程的线上教学，提供多类习题自动判题、企业级DevOps实训、免费在线习题库等众多高级特性辅助进行数字化教学转型。                  
                </div>
-                <a href="/platform" id="startAttendClass" target="_blank">
+                <a href="https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fdevcloudsso.huaweicloud.com%2Fauthticket%3Fservice%3Dhttps%253A%252F%252Fclassroom.devcloud.huaweicloud.com%252Fplatform#/login" id="startAttendClass" target="_blank">
                     <button class="dev-btn" type="button">
                         <span class="button-content">开始上课</span>
                     </button>
