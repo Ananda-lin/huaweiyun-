@@ -83,7 +83,7 @@
         
         header .right-box {
             display: flex;
-            margin-left: 100px;
+            margin-left: 195px;
             line-height: 59px;
             height: 100%;
         }
@@ -144,7 +144,33 @@
             margin-top:20px;
             vertical-align: middle;
             border-style: none;
-        }   
+        } 
+        .header .swiper{
+            width:100%;
+            position:absolute;
+            text-align:center;
+            transform:translate3d(0,0,0);
+            bottom:280px;
+            z-index:10;
+        }
+        .header .swiper .swiper-pagination-bullet{
+            width: 8px;
+            height:8px;
+            margin: 0px 4px;
+            display:inline-block;
+            border-radius:100%;
+            background-color:#000;
+            opacity:.2;
+            cursor:pointer;
+
+        }
+        .header .swiper span:first-child{
+            width:28px;
+            border-radius:5px;
+            background: #5e7ce0;
+            opacity:1;
+
+        }  
         .content {
             display:flex;
             flex-wrap:wrap;
@@ -164,6 +190,26 @@
             border-radius:5px;
             -webkit-border-radius:5px;
             align-items:center;
+        }
+        .banner-box .banner-box-left{
+            flex:1px;
+            padding-right:40px;
+            font-size:16px;
+            color:#5e6678;
+            line-height:32px;
+        }
+        .content .dev-btn{
+            height:32px;
+            line-height:20px;
+            white-space:nowrap;
+            border:none;
+            border-radius:16px;
+            margin-right:12px;
+            min-width:80px;
+            padding:4px 20px;
+            font-size:14px;
+            background-color:#5e7ce0;
+            color:#fff;
         }
         .content .intro-box {}
         
@@ -233,8 +279,14 @@
             <div class="banner-swipper">
                 <a href="https://bbs.huaweicloud.com/forum/thread-39737-1-1.html">
                     <img class="swiper-lazy" src="https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-2.d69113832d9d49869f17.jpg" width="100%">
-
-                </a>
+                </a>               
+            </div>
+            <div class="swiper">
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
+                <span class="swiper-pagination-bullet" role="button"></span>
             </div>
             <!--提示：不需要实现轮播图效果-->
         </div>
@@ -242,8 +294,13 @@
         <div class="content">
             <!--页面内容区域-->
            <section class="banner-box">
-               <div class="banner-box-left"> Classroom是基于华为云的云上软件教学服务，支持高校师生实现备课、上课、作业、考试、实验、实训等全教学流程的线上教学，提供多类习题自动判题、企业级DevOps实训、免费在线习题库等众多高级特性辅助进行数字化教学转型。</div>
-            <a href="/platform" id="startAttendClass" target="_blank"></a>
+               <div class="banner-box-left"> Classroom是基于华为云的云上软件教学服务，支持高校师生实现备课、上课、作业、考试、实验、实训等全教学流程的线上教学，提供多类习题自动判题、企业级DevOps实训、免费在线习题库等众多高级特性辅助进行数字化教学转型。                  
+               </div>
+                <a href="/platform" id="startAttendClass" target="_blank">
+                    <button class="dev-btn" type="button">
+                        <span class="button-content">开始上课</span>
+                    </button>
+                </a>
             </section>
            <section class="course-title"></section>
             <div class="intro-box">
