@@ -21,10 +21,11 @@
         
         a {
             text-decoration: none;
-            cursor:pointer;
+            cursor: pointer;
         }
-        a:visited{
-            text-decoration:none;
+        
+        a:visited {
+            text-decoration: none;
         }
         
         header {
@@ -62,17 +63,19 @@
             text-decoration: none;
         }
         
-        
-        header #navbox > a:first-child{
+        header #navbox>a:first-child {
             color: #5e7ce0;
         }
+        
         header .nav-box:hover {
             color: #5e7ce0;
             transition: color .3s cubic-bezier(.645, .045, .355, 1);
         }
-        header #navbox a:not(:first-child):active header #navbox > a:first-child{
-            color:#293040;
+        
+        header #navbox a:not(:first-child):active header #navbox>a:first-child {
+            color: #293040;
         }
+        
         header .right-box {
             line-height: 59px;
         }
@@ -137,7 +140,6 @@
         
         .header {
             /* margin-top: 60px; */
-           
         }
         
         .header .banner-swipper {
@@ -145,237 +147,270 @@
         }
         
         .header img {
-            margin-top:60px;
+            margin-top: 60px;
             vertical-align: middle;
             border-style: none;
-        } 
-        .header .swiper{
-            width:100%;
-            position:absolute;
-            text-align:center;
-            transform:translate3d(0,0,0);
-            margin-top:-60px;
-            z-index:10;
         }
-        .header .swiper .swiper-pagination-bullet{
+        
+        .header .swiper {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            transform: translate3d(0, 0, 0);
+            margin-top: -60px;
+            z-index: 10;
+        }
+        
+        .header .swiper .swiper-pagination-bullet {
             width: 8px;
-            height:8px;
+            height: 8px;
             margin: 0px 4px;
-            display:inline-block;
-            border-radius:100%;
-            background-color:#000;
-            opacity:.2;
-            cursor:pointer;
-
+            display: inline-block;
+            border-radius: 100%;
+            background-color: #000;
+            opacity: .2;
+            cursor: pointer;
         }
-        .header .swiper span:first-child{
-            width:28px;
-            border-radius:5px;
+        
+        .header .swiper span:first-child {
+            width: 28px;
+            border-radius: 5px;
             background: #5e7ce0;
-            opacity:1;
-
-        }  
+            opacity: 1;
+        }
+        
         .content {
-            display:flex;
-            flex-wrap:wrap;
-            width:1200px;
-            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: 0 auto;
         }
-        .banner-box{
-            display:flex;
-            flex-wrap:nowrap;
-            padding:30px;
-            position:relative;
-            margin-top:-25px;
-            z-index:2;
-            width:1200px;
-            background:#fff;
-            box-shadow:0 0 20px 0 rgba(41,48,64,.1);
-            border-radius:5px;
-            -webkit-border-radius:5px;
-            align-items:center;
+        
+        .banner-box {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 30px;
+            position: relative;
+            margin-top: -25px;
+            z-index: 2;
+            width: 1200px;
+            background: #fff;
+            box-shadow: 0 0 20px 0 rgba(41, 48, 64, .1);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            align-items: center;
         }
-        .banner-box .banner-box-left{
-            flex:1px;
-            padding-right:40px;
-            font-size:16px;
-            color:#5e6678;
-            line-height:32px;
+        
+        .banner-box .banner-box-left {
+            flex: 1px;
+            padding-right: 40px;
+            font-size: 16px;
+            color: #5e6678;
+            line-height: 32px;
         }
-        .content .dev-btn{
-            height:32px;
-            line-height:20px;
-            white-space:nowrap;
-            border:none !important;
-            border-radius:16px;
-            margin-right:12px;
-            min-width:80px;
-            padding:4px 20px;
-            font-size:14px;
-            background-color:#5e7ce0;
-            color:#fff;
+        
+        .content .dev-btn {
+            height: 32px;
+            line-height: 20px;
+            white-space: nowrap;
+            border: none !important;
+            border-radius: 16px;
+            margin-right: 12px;
+            min-width: 80px;
+            padding: 4px 20px;
+            font-size: 14px;
+            background-color: #5e7ce0;
+            color: #fff;
             -webkit-appearance: inhert;
-            cursor:pointer;
-            outline:0;
+            cursor: pointer;
+            outline: 0;
         }
-        .content .dev-btn:hover{
-            background-color:#526ecc;
-
+        
+        .content .dev-btn:hover {
+            background-color: #526ecc;
         }
-        .content .dev-btn:active{
-            border:none;
+        
+        .content .dev-btn:active {
+            border: none;
         }
-        .content .course-title{
-            width:1200px;
-            text-align:center;
-            margin:30px 0 40px;
-            
-
+        
+        .content .course-title {
+            width: 1200px;
+            text-align: center;
+            margin: 30px 0 40px;
         }
-        .course-title h3{
-            font-size:24px;
-            font-weight:700;
-            color:#293040;
-            margin:0 0 16px;
-
+        
+        .course-title h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #293040;
+            margin: 0 0 16px;
         }
-        .content .course-title span{
-            font-size:16px;
-            color:#575d6c;
+        
+        .content .course-title span {
+            font-size: 16px;
+            color: #575d6c;
         }
-        .content .intro-box .course-card{
-            width:380px;
-            margin:0 30px 30px 0;
-            border:1px solid #f7f8fa;
-            box-shadow:0 4px 16px 0 rgba(124,142,227,.12);
-            border-radius:12px;
-            display:inline-block;
+        
+        .content .intro-box .course-card {
+            width: 380px;
+            margin: 0 30px 30px 0;
+            border: 1px solid #f7f8fa;
+            box-shadow: 0 4px 16px 0 rgba(124, 142, 227, .12);
+            border-radius: 12px;
+            display: inline-block;
         }
-        .content .intro-box .card-box{
-            width:100%;
-            position:relative;
-
+        
+        .content .intro-box .card-box {
+            width: 100%;
+            position: relative;
         }
-        .card-box .card-bg{
-            height:200px;
-            width:100%;
-            border-radius:12px 12px 0 0;
-            background-image:url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/cloud-class.5974862e24f459dd518a.png);
-            background-position:0 0;  
+        
+        .card-box .card-bg {
+            height: 200px;
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+            background-image: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/cloud-class.5974862e24f459dd518a.png);
+            background-position: 0 0;
         }
-        .card-box .card-wrapper{
-            padding:0 20px;
+        
+        .card-box .card-wrapper {
+            padding: 0 20px;
         }
-        .card-box .card-content{
-            height:56px;
-            width:100%;
-            margin-bottom:8px;
+        
+        .card-box .card-content {
+            height: 56px;
+            width: 100%;
+            margin-bottom: 8px;
         }
-        .card-box .card-content .card-name{
-            margin-top:16px;
+        
+        .card-box .card-content .card-name {
+            margin-top: 16px;
         }
-        .card-name .course-name{
-            width:100%;
-            font-size:16px;
-            color:#293040;
-            overflow:hidden;
-            white-space:nowrap;
-            text-overflow:ellipsis;
-            font-weight:700;
+        
+        .card-name .course-name {
+            width: 100%;
+            font-size: 16px;
+            color: #293040;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 700;
         }
-        .card-name span, .scholl-author span, .scholl-author i{
-            display:inline-block;
-            vertical-align:middle;
+        
+        .card-name span,
+        .scholl-author span,
+        .scholl-author i {
+            display: inline-block;
+            vertical-align: middle;
         }
-        .card-content .scholl-author{
-            margin-top:8px;
-            color:#959eb2;
-            font-size:12px;
+        
+        .card-content .scholl-author {
+            margin-top: 8px;
+            color: #959eb2;
+            font-size: 12px;
         }
-        .scholl-author .user-name,.scholl-author .scholl-name{
-            max-width:calc((81%-10px)/2);            
+        
+        .scholl-author .user-name,
+        .scholl-author .scholl-name {
+            max-width: calc((81%-10px)/2);
         }
-        .scholl-author i{
-            margin-right:4px;
+        
+        .scholl-author i {
+            margin-right: 4px;
         }
-        .icon-classroom-user , .icon-classroom-school{
-            background-image:url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/classroom.sprite.d2922e64a1fdfbcab62c.png?1582096505080);
-            width:16px;
-            height:16px;
+        
+        .icon-classroom-user,
+        .icon-classroom-school {
+            background-image: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/classroom.sprite.d2922e64a1fdfbcab62c.png?1582096505080);
+            width: 16px;
+            height: 16px;
         }
-        .icon-classroom-user{
-            background-position:-312px -464px; 
+        
+        .icon-classroom-user {
+            background-position: -312px -464px;
         }
-        .scholl-author .user-name span , .scholl-name span{
-            max-width:78%;
-            overflow:hidden;
-            white-space:nowrap;
-            text-overflow:ellipsis;
+        
+        .scholl-author .user-name span,
+        .scholl-name span {
+            max-width: 78%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
-
-        .icon-classroom-school{
-            background-position:-408px -440px;
+        
+        .icon-classroom-school {
+            background-position: -408px -440px;
         }
-        .float-right{
-            float:right;
+        
+        .float-right {
+            float: right;
         }
-        .scholl-author .time-tag{
-            border:1px solid #eee;
-            border-radius:12px;
-            padding:2px 8px;
+        
+        .scholl-author .time-tag {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 2px 8px;
         }
-        .clear-fix::after{
-            content:'';
-            display:block;
-            width:0;
-            clear:both;
+        
+        .clear-fix::after {
+            content: '';
+            display: block;
+            width: 0;
+            clear: both;
         }
-        .card-box .card-description{
-            height:48px;
-            line-height:24px;
-            width:100%;
-            font-size:14px;
-            color:#5e6678;
-            overflow:hidden;
-            text-overflow:ellipsis;
-            display:-webkit-box;
-            -webkit-line-clamp:2;
-            -webkit-box-orient:vertical;
-            letter-spacing:.5px;
-            word-break:break-all;
+        
+        .card-box .card-description {
+            height: 48px;
+            line-height: 24px;
+            width: 100%;
+            font-size: 14px;
+            color: #5e6678;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            letter-spacing: .5px;
+            word-break: break-all;
         }
-        .card-box .box-line{
-            margin-top:5px;
-            width:100%;
-            height:1px;
-            opacity:.05;
-            background:#000;
+        
+        .card-box .box-line {
+            margin-top: 5px;
+            width: 100%;
+            height: 1px;
+            opacity: .05;
+            background: #000;
         }
-        .course-card .operate-box{
-            overflow:hidden;
-            padding:14px 0;
+        
+        .course-card .operate-box {
+            overflow: hidden;
+            padding: 14px 0;
         }
-        .course-card .operate-box span{
-            font-size:14px;
-            text-align:center;
-            line-height:20px;
-            color:#e41f2b;
-            padding:2px 4px;
-            border-radius:2px;
-            background-color:rgba(228,31,43,.1);
-            float:right;
+        
+        .course-card .operate-box span {
+            font-size: 14px;
+            text-align: center;
+            line-height: 20px;
+            color: #e41f2b;
+            padding: 2px 4px;
+            border-radius: 2px;
+            background-color: rgba(228, 31, 43, .1);
+            float: right;
         }
-        .content .course-card{
-            border:1px solid #f7f8fa;
-            box-shadow:0 4px 16px 0 rgba(124,142,227,.12)!important;
+        
+        .content .course-card {
+            border: 1px solid #f7f8fa;
+            box-shadow: 0 4px 16px 0 rgba(124, 142, 227, .12)!important;
         }
-        .content .course-card:hover{
-            transform:translateY(-6px);
-            transition:all .1s ease-out;
-            box-shadow:0 16px 20px 0 rgba(124,142,227,.24);
-            z-index:50;
+        
+        .content .course-card:hover {
+            transform: translateY(-6px);
+            transition: all .1s ease-out;
+            box-shadow: 0 16px 20px 0 rgba(124, 142, 227, .24);
+            z-index: 50;
         }
-
+        
         .content .class-box {}
         
         .content .market-box {}
@@ -390,7 +425,7 @@
     <div class="nav">
         <!--页面导航区域-->
         <!-- https://classroom.devcloud.huaweicloud.com/home -->
-        <!-- 20200707 -->
+        <!-- 20200712 -->
         <header>
             <div class="public-logo">
                 <a href="https://classroom.devcloud.huaweicloud.com/home"></a>
@@ -400,26 +435,26 @@
             </div>
             <div id="navbox">
                 <a href="https://classroom.devcloud.huaweicloud.com/home">
-                    <div class="nav-box" >首页
+                    <div class="nav-box">首页
                     </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/teachingmarket">
-                    <div class="nav-box" >教学市场 </div>
+                    <div class="nav-box">教学市场 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudclassroom">
-                    <div class="nav-box" >云课堂 </div>
+                    <div class="nav-box">云课堂 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/microauthentication">
-                    <div class="nav-box" >培训认证 </div>
+                    <div class="nav-box">培训认证 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/course/cloudlab">
-                    <div class="nav-box" >云端实验室 </div>
+                    <div class="nav-box">云端实验室 </div>
                 </a>
                 <a href="https://classroom.devcloud.huaweicloud.com/home/experimentalclass">
-                    <div class="nav-box" >新工科实验班 </div>
+                    <div class="nav-box">新工科实验班 </div>
                 </a>
                 <a href="https://bbs.huaweicloud.com/forum/forumdisplay-fid-708-orderby-lastpost.html">
-                    <div class="nav-box" >学习交流 </div>
+                    <div class="nav-box">学习交流 </div>
                 </a>
             </div>
             <div id="rightBox" class="right-box">
@@ -442,7 +477,7 @@
             <div class="banner-swipper">
                 <a href="https://bbs.huaweicloud.com/videos/102379">
                     <img class="swiper-lazy" src="https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-1.5a1de8473b0940dd9515.jpg" width="100%">
-                </a>               
+                </a>
             </div>
             <div class="swiper">
                 <span class="swiper-pagination-bullet" role="button"></span>
@@ -456,53 +491,53 @@
 
         <div class="content">
             <!--页面内容区域-->
-           <section class="banner-box">
-               <div class="banner-box-left"> Classroom是基于华为云的云上软件教学服务，支持高校师生实现备课、上课、作业、考试、实验、实训等全教学流程的线上教学，提供多类习题自动判题、企业级DevOps实训、免费在线习题库等众多高级特性辅助进行数字化教学转型。                  
-               </div>
+            <section class="banner-box">
+                <div class="banner-box-left"> Classroom是基于华为云的云上软件教学服务，支持高校师生实现备课、上课、作业、考试、实验、实训等全教学流程的线上教学，提供多类习题自动判题、企业级DevOps实训、免费在线习题库等众多高级特性辅助进行数字化教学转型。
+                </div>
                 <a href="https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fdevcloudsso.huaweicloud.com%2Fauthticket%3Fservice%3Dhttps%253A%252F%252Fclassroom.devcloud.huaweicloud.com%252Fplatform#/login" id="startAttendClass" target="_blank">
                     <button class="dev-btn" type="button">
                         <span class="button-content">开始上课</span>
                     </button>
                 </a>
             </section>
-           <section class="course-title">
-               <h3>云课堂</h3>
-               <span>免费精品公开课,覆盖丰富知识点,课件与在线习题</span>
-           </section>
+            <section class="course-title">
+                <h3>云课堂</h3>
+                <span>免费精品公开课,覆盖丰富知识点,课件与在线习题</span>
+            </section>
             <div class="intro-box">
                 <a class="course-card " href="https://classroom.devcloud.huaweicloud.com/joinclass/6bc98f2050e14b539dd46ea64b14b92f/4" target="_blank">
-                <div class="card-box" id="courseCarBox">
-                    <div class="card-bg"></div>
-                    <div class="card-wrapper">
-                        <div class="card-content">
-                            <div class="card-name">
-                                <span class="course-name"title="区块链精品实践课">区块链精品实践课</span>
-                            </div>
-                            <div class="scholl-author clear-fix">
-                                <span class="user-name">
+                    <div class="card-box" id="courseCarBox">
+                        <div class="card-bg"></div>
+                        <div class="card-wrapper">
+                            <div class="card-content">
+                                <div class="card-name">
+                                    <span class="course-name" title="区块链精品实践课">区块链精品实践课</span>
+                                </div>
+                                <div class="scholl-author clear-fix">
+                                    <span class="user-name">
                                     <i class="icon-classroom-user"></i>
                                     <span class="user-name-text">Classroom</span>
-                                </span>
-                                <span class="scholl-name" title=" 华为云">
+                                    </span>
+                                    <span class="scholl-name" title=" 华为云">
                                     <i class="icon-classroom-school"></i>
                                     <span class="scholl-name-text">华为云</span>
-                                </span>
-                                <span class="float-right">
+                                    </span>
+                                    <span class="float-right">
                                     <span class="time-tag">6小时</span>
-                                </span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-description" title="本课程由浅入深的介绍区块链技术缘起、原理机制、演进和发展现状，分享区块链典型应用场景及特点。了解华为云区块链的方案及特点，参与动手实验。从入门到实践，循序渐进一站式学习。">
-                            本课程由浅入深的介绍区块链技术缘起、原理机制、演进和发展现状，分享区块链典型应用场景及特点。了解华为云区块链的方案及特点，参与动手实验。从入门到实践，循序渐进一站式学习。
-                        </div>
-                        <div class="box-line"></div>
-                        <div class="card-operate">
-                            <div class="operate-box">
-                                <span>限时免费</span>
+                            <div class="card-description" title="本课程由浅入深的介绍区块链技术缘起、原理机制、演进和发展现状，分享区块链典型应用场景及特点。了解华为云区块链的方案及特点，参与动手实验。从入门到实践，循序渐进一站式学习。">
+                                本课程由浅入深的介绍区块链技术缘起、原理机制、演进和发展现状，分享区块链典型应用场景及特点。了解华为云区块链的方案及特点，参与动手实验。从入门到实践，循序渐进一站式学习。
+                            </div>
+                            <div class="box-line"></div>
+                            <div class="card-operate">
+                                <div class="operate-box">
+                                    <span>限时免费</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </a>
                 <!--classroom介绍区域-->
             </div>
